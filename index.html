@@ -280,7 +280,7 @@
 <body>
 
 <div id="container">
-    <h1>Energy Data of the World</h1>
+    <h1>Global Shifts in Energy Consumption</h1>
     <div class = "primary-button-container">
         <div id ="radio_button_container"></div>
         <div class = "button-container">
@@ -308,10 +308,15 @@
         </div>
     </div>
     <div class="contents" id="Instructions">
-    	<p>Instructions: Click on the timeline to switch between different years. Click "Play" to start animation, click "Stop" to stop animation and click "Reset" to see the original map. Hover mouse on countries on the map to see the detailed number. Use category buttons to see different data. </p>
+    	<p>Instructions: Click on any of the four quantities listed on top to update the Cartogram with those data. Click "Play" to start an animation that adjusts the may from 1970 data through 2040 projections. Hover over countries to see the country-specific quantity. </p>
     </div>
     <div class="contents" id="Cartogram_explanation">
-    	<h2>Cartogram</h2>
+    <h2>Global Energy Consumption Shifts from the West to the East</h2>
+    <p>The world is witnessing a major change in the energy landscape, while several key trends can be concluded from the above map. First, under IEA new policy projection, global energy consumption continues to grow in absolute terms although the absolute term the rate of growth will be slower. Second, global energy consumption continues to shift from West to East. Although China’s energy consumption growth slows, India, Indonesia, and other Southeast Asian nations drive continued growth. Finally, carbon dioxide emissions continue to grow. Developed countries in North America, Europe see their carbon dioxide emissions decline, or grow very slowly. Developing countries, contribute most net growth in carbon dioxide emissions. 
+    </p>
+    <p> Detailed analysis can be found in “Global Energy Outlook 2015” written by Newell, Qian and Raimi of Duke University Energy Initiative.</p>
+
+    <!--	<h2>Cartogram</h2>
     	<p>
     	 	According to Wikipedia, "cartogram is a map in which some thematic mapping variable - such as travel time, population, or Gross National Product - is substituted for land area or distance. Cartograms have a fairly long history, with examples form the mid-1800s. ". Although there are rich literature about cartogram, the one used in this visualization is <a href="http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf">an algoritm to construct continuous area cartograms</a> by James A. Dougenik, Nicholas R. Chrisman and Duane R. Niemeyer, ©1985 by the Association of American Geographers. The basic procedure for producing cartograms, as indicated in the paper, employs a brute force method - the forces of all polygons act upon every boundary coordinate. This approach is shown below:
     	</p>
@@ -342,16 +347,17 @@
     		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move coordinate accordingly<br>
     		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write distorted line to output and plot result
     	</code>
+        -->
         <h2>Data</h2>
         <p>
-            The data are originally from <i>IEA World Energy Outlook 2014</i> and <i>IEA World Energy Statistics and Balances </i> or interpolated using linear interpolation. The table below shows the source of the data:<br>
+            The data are originally from the <i>IEA World Energy Outlook 2014</i> and <i>IEA World Energy Statistics and Balances </i> or interpolated using linear interpolation. The table below shows the sources of the data.Countries for which no data were available are assumed a value of zero for visualization purposes.<br>
             Energy Consumption and CO2 Emission:
             <table style = "width:50%" align="center" border = "1">
                 <tr>
                     <th style = "width: 80px"></th>
                     <th> Brazil, China, Japan, Russia and US </th>
-                    <th> Other 134 countries included in IEA report </th>
-                    <th> The rest of the world </th>
+                    <th> Other 134 countries included in the IEA report </th>
+                    <th> Remaining Countries </th>
                 </tr>
                 <tr>
                     <th style = "width: 80px"> 1971 - 2012 </th>
@@ -362,7 +368,7 @@
                 <tr>
                     <th style = "width: 80px"> 2020, 2025, 2030, 2035, 2040</th>
                     <td> From <i>IEA World Energy Outlook 2014</i> using "New Policies" scenario forecasts</td>
-                    <td> Interpolated by continents' data from "New Policies" scenario forecasts of <i>IEA World Energy Outlook 2014</i> and individual country's share in 2012</td>
+                    <td> Interpolated by regions' data from "New Policies" scenario forecasts of <i>IEA World Energy Outlook 2014</i> and individual country's share in 2012</td>
                     <td> Assumed 0 </td>
                 </tr>
                 <tr>
@@ -379,8 +385,8 @@
                 <tr>
                     <th style = "width: 80px"></th>
                     <th> Brazil, China, Japan, Russia and US </th>
-                    <th> Other 134 countries included in IEA report </th>
-                    <th> The rest of the world </th>
+                    <th> Other 134 countries included in the IEA report </th>
+                    <th> Remaining Countries </th>
                 </tr>
                 <tr>
                     <th style = "width: 80px"> 1971 - 2012 </th>
@@ -391,7 +397,7 @@
                 <tr>
                     <th style = "width: 80px"> 2040</th>
                     <td> From <i>IEA World Energy Outlook 2014</i> forecasts</td>
-                    <td> Interpolated by continents' data from forecasts of <i>IEA World Energy Outlook 2014</i> and individual country's share in 2012</td>
+                    <td> Interpolated by regions' data from forecasts of <i>IEA World Energy Outlook 2014</i> and individual country's share in 2012</td>
                     <td> Assumed 0 </td>
                 </tr>
                 <tr>
@@ -401,14 +407,14 @@
                     <td> Assumed 0 </td>
                 </tr>
             </table><br>
-            Data of Soviet Union countries before 1990 are interpolated using individual country's share in 1990. The detailed information of country categories can be found in the Appendix of <i>IEA World Energy Outlook 2014</i>. The categories we used to divide countries are: Africa, Latin America, Middle East, OECD Europe, OECD Asia Oceania, Non-OECD Asia, Eastern Europe/Eurasia. 
+            Data for member states of the Soviet Union before 1990 are interpolated using those country's individual share in 1990. The composition of macro geographical regions can be found in the Appendix of <i>IEA World Energy Outlook 2014</i>. The categories we used to divide countries are: Africa, Latin America, Middle East, OECD Europe, OECD Asia Oceania, Non-OECD Asia, Eastern Europe/Eurasia. 
         </p>
 
     </div>
     <div class="contents">
         <h2>About</h2>
         <p>
-            This map is produced by Mengyang Lin using <a href = "http://d3js.org/">d3.js</a> and <a href="http://prag.ma/code/d3-cartogram/cartogram.js">cartogram.js</a>. The code was adapted from the example provided by <a href="https://github.com/shawnbot">shawnbot</a> and <a href="https://github.com/jalperin/d3-cartogram">jalperin</a>. The color is from colorbrewer.
+            This map was developed by Mengyang Lin at the Duke University Energy Initiative using <a href = "http://d3js.org/">d3.js</a>, <a href="http://prag.ma/code/d3-cartogram/cartogram.js">cartogram.js</a> and <a href="https://github.com/bmschmidt/colorbar">colorbar.js</a>. The code was adapted from the example provided by <a href="https://github.com/shawnbot">shawnbot</a> and <a href="https://github.com/jalperin/d3-cartogram">jalperin</a>. Color was selected from <a href="http://colorbrewer2.org/">colorbrewer</a>.
         </p>
      </div>
     <script src="lib/d3.min.js"></script>
